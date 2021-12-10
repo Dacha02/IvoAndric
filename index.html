@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mojCss.css" />
     <!--<link rel="stylesheet" href="css/slick.css" />-->
-    <title>Author</title>
+    <title>Ivo Andrić</title>
   </head>
   <body>
     <!-- Navigation -->
     <nav id="pocetak" class="site-navigation">
       <div class="site-navigation-inner site-container">
-        <p style="color: white">IA</p>
+        <!-- <p style="color: white">IA</p> -->
+        <a href="index.html"><img src="./mojeSlike/logo.png" alt="" /></a>
         <div class="main-navigation">
           <ul class="main-navigation__ul">
             <li><a href="#">Homepage</a></li>
@@ -47,6 +48,7 @@
     <!-- Navigation end -->
 
     <!-- Top banner -->
+
     <section class="fh5co-top-banner">
       <div class="top-banner__inner site-container">
         <div class="top-banner__image">
@@ -367,19 +369,21 @@
     <!-- Books and CD -->
     <section class="fh5co-books">
       <div class="site-container">
-        <h2 class="universal-h2 universal-h2-bckg">Kuca i slike</h2>
+        <h2 class="universal-h2 universal-h2-bckg">Najpoznatija dela</h2>
         <div class="books">
           <div class="single-book">
             <img
               class="srcSlike"
-              src="/mojeSlike/KucaIA.png"
+              src="./mojeSlike/bgPrice.png"
               alt="single book and cd"
             />
             <div class="single-book_download">
               <img src="./images/download.svg" alt="book image" />
             </div>
-            <h4 class="single-book__title">Kuća</h4>
-            <span class="single-book__price">Kuća u kojoj je živeo...</span>
+            <h4 class="single-book__title">Beogradske priče</h4>
+            <span class="single-book__price"
+              >Ostajući na tragu osobenosti...</span
+            >
             <!-- star rating -->
             <!-- <div class="rating">
               <span>&#9734;</span>
@@ -393,14 +397,14 @@
           <div class="single-book">
             <img
               class="srcSlike"
-              src="/images/books-2.jpg"
+              src="./mojeSlike/srPrice.png"
               alt="single book and cd"
             />
             <div class="single-book_download">
               <img src="./images/download.svg" alt="book image" />
             </div>
-            <h4 class="single-book__title">Molleon’s Life</h4>
-            <span class="single-book__price">$22.00</span>
+            <h4 class="single-book__title">Sarajevske priče</h4>
+            <span class="single-book__price">U zbirci Sarajevske price...</span>
             <!-- star rating -->
             <!-- <div class="rating">
               <span>&#9734;</span>
@@ -414,26 +418,28 @@
           <div class="single-book">
             <img
               class="srcSlike"
-              src="./images/books-3.jpg"
+              src="./mojeSlike/turPrice.png"
               alt="single book and cd"
             />
             <div class="single-book_download">
               <img src="./images/download.svg" alt="book image" />
             </div>
-            <h4 class="single-book__title">Love is Love</h4>
-            <span class="single-book__price">$25.00</span>
+            <h4 class="single-book__title">Turske priče</h4>
+            <span class="single-book__price"
+              >Turske priče po egzotičnosti...</span
+            >
           </div>
           <div class="single-book">
             <img
               class="srcSlike"
-              src="./images/books-4.jpg"
+              src="./mojeSlike/susret.png"
               alt="single book and cd"
             />
             <div class="single-book_download">
               <img src="./images/download.svg" alt="book image" />
             </div>
-            <h4 class="single-book__title">Give Me Also</h4>
-            <span class="single-book__price">$30.00</span>
+            <h4 class="single-book__title">Susret</h4>
+            <span class="single-book__price">Kao radoznao duh i...</span>
           </div>
         </div>
         <!-- <div class="books-brand-button">
@@ -447,31 +453,31 @@
     <div id="kaunterdiv" class="fh5co-counter counters">
       <div class="counter-inner site-container">
         <div class="single-count">
-          <span class="count" data-count="50">50</span>
+          <span class="count" data-count="50">37</span>
           <div class="single-count__text">
             <img src="./images/counter-1.png" alt="counter icon" />
-            <p>Books</p>
+            <p>Dela</p>
           </div>
         </div>
         <div class="single-count">
           <span class="count" data-count="600">600</span>
           <div class="single-count__text">
             <img src="./images/counter-2.png" alt="counter icon" />
-            <p>Pages</p>
+            <p>Stranice</p>
           </div>
         </div>
         <div class="single-count">
           <span class="count" data-count="2000">200</span>
           <div class="single-count__text">
             <img src="./images/counter-3.png" alt="counter icon" />
-            <p>Sales</p>
+            <p>Prodaja</p>
           </div>
         </div>
         <div class="single-count">
-          <span class="count" data-count="125">125</span>
+          <span class="count" data-count="125">25</span>
           <div class="single-count__text">
             <img src="./images/counter-4.png" alt="counter icon" />
-            <p>Awards</p>
+            <p>Nagrade</p>
           </div>
         </div>
       </div>
@@ -482,7 +488,17 @@
     <section class="fh5co-blog">
       <div class="site-container">
         <h2 class="universal-h2 universal-h2-bckg">Kviz</h2>
-        <div class="blog-slider blog-inner">
+        <h3 class="universal-h2">
+          Za koje delo je Ivo Andrić osvojio nobelovu nagradju?
+        </h3>
+        <div id="kvizKontejner">
+          <input class="batnKviz" type="button" value="Tranička hronika" />
+          <input class="batnKviz" type="button" value="Na Drini ćuprija" />
+          <input class="batnKviz" type="button" value="Prokleta avlija" />
+          <input class="batnKviz" type="button" value="Gospođica" />
+        </div>
+
+        <!-- <div class="blog-slider blog-inner">
           <div class="single-blog">
             <div class="single-blog__img">
               <img src="./images/blog1.jpg" alt="blog image" />
@@ -528,7 +544,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- Blog end -->
@@ -590,22 +606,22 @@
     <section class="fh5co-social">
       <div class="site-container">
         <div class="social">
-          <h5>Follow me!!</h5>
+          <h5>Zapratite me!!</h5>
           <div class="social-icons">
-            <a href="#" target="_blank"
+            <a href="https://twitter.com/" target="_blank"
               ><img src="./images/social-twitter.png" alt="social icon"
             /></a>
-            <a href="#" target="_blank"
+            <a href="https://www.pinterest.com/" target="_blank"
               ><img src="./images/social-pinterest.png" alt="social icon"
             /></a>
-            <a href="#" target="_blank"
+            <a href="https://www.youtube.com/" target="_blank"
               ><img src="./images/social-youtube.png" alt="social icon"
             /></a>
-            <a href="#" target="_blank"
+            <a href="https://www.facebook.com/" target="_blank"
               ><img src="./images/social-twitter.png" alt="social icon"
             /></a>
           </div>
-          <h5>Share it!</h5>
+          <h5>Podelite!</h5>
         </div>
       </div>
     </section>
@@ -618,23 +634,27 @@
           <div class="footer-info">
             <div class="footer-info__left">
               <img src="./images/footer-img.jpg" alt="about me image" />
-              <p>Read more about me</p>
+              <a
+                href="https://dacha02.github.io/davidstevicportfolio/"
+                target="_blank"
+                ><p>Portfolio sajt</p></a
+              >
             </div>
             <div class="footer-info__right">
               <h5>Get In Touch</h5>
-              <p class="footer-phone">Phone: +958734902847</p>
-              <p>Email : Jhone@Example.com</p>
+              <p class="footer-phone">Telefon: ++3816345999</p>
+              <p>Email : david.stevi.58.20@gmai.com</p>
               <div class="social-icons">
-                <a href="#" target="_blank"
+                <a href="https://twitter.com/" target="_blank"
                   ><img src="./images/social-twitter.png" alt="social icon"
                 /></a>
-                <a href="#" target="_blank"
+                <a href="https://www.pinterest.com/" target="_blank"
                   ><img src="./images/social-pinterest.png" alt="social icon"
                 /></a>
-                <a href="#" target="_blank"
+                <a href="https://www.youtube.com/" target="_blank"
                   ><img src="./images/social-youtube.png" alt="social icon"
                 /></a>
-                <a href="#" target="_blank"
+                <a href="https://www.facebook.com/" target="_blank"
                   ><img src="./images/social-twitter.png" alt="social icon"
                 /></a>
               </div>

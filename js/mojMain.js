@@ -164,7 +164,37 @@ for (let i = 0; i < modal.length; i++) {
     p.innerHTML = "&times";
     img.setAttribute("src", srcSlike);
     h1.textContent = contentSlike;
-    span.textContent = contentSpana;
+    if (i == 0) {
+      span.textContent = `Ostajući na tragu osobenosti Andrićevog
+      pripovedačkog postupka, možemo sklopiti
+      skicu jedne posebne literarne građevine:
+      takozvane beogradske hronike. Ta nedovrše-
+      na građevina mogla bi da bude imaginarni
+      model za projekciju književne rekonstrukcije
+      novije povesti Beograda.`;
+    } else if (i == 1) {
+      span.textContent = `U zbirci ,,Sarajevske priče" pred čitaocem se
+      otvara jedna mnogolika galaksija junaka i
+      sveobuhvatna slika Sarajeva koja najčešće ima
+      za temu neki od istorijski važnih trenutaka u
+      Zivotu grada na Miljacki, toga ,,cveta među
+      gradovima".`;
+    } else if (i == 2) {
+      span.textContent = `Turske priče po egzotičnosti tema i udaljenom
+      istorijskom trenutku nalikuju kakvom
+      rukavcu iz Hiljadu i jedne noći. U njima pisac
+      rasvetljava istorijske, verske, kulturološke
+      i socijalne specifičnosti jednog tegobnog
+      prostora rođenog u patnji i krvi, ali odaje i
+      nepodeljenu pohvalu trajnosti lepote koja
+      prevazilazi i samo trajanje zla.`;
+    } else {
+      span.textContent = `Kao radoznao duh i - uprkos „modernističkim" predrasudama - raznovrstan i avan-
+      gardan pisac, Andrić je ostao privržen i sasvim kratkoj proznoj formi, o čemu svedoči
+      ne samo niz sasvim kratkih priča koje je objavio za života nego i veliki broj proznih
+      zapisa, skica i belezaka koji su posthumno objavljeni pod naslovima ,,Znakovi pored
+      puta" i ,,Sveske"`;
+    }
 
     //Dodavanje clasa
     p.classList.add("close");
@@ -263,3 +293,26 @@ dugmeForme.addEventListener("click", () => {
     erijaTextaStilizovanje.classList.add("class", "textErijaStilizovanje");
   }
 });
+
+//Kviz
+
+let batn = document.querySelectorAll(".batnKviz");
+var kliknuto = 0;
+for (let i = 0; i < batn.length; i++) {
+  batn[i].addEventListener("click", () => {
+    kliknuto = i;
+    if (i == 0) {
+      console.log("Klinuto1");
+      batn[i].classList.add("pogresno");
+    } else if (kliknuto == 1) {
+      console.log("Klinuto2");
+      batn[i].classList.add("ispravno");
+    } else if (kliknuto == 2) {
+      console.log("Klinuto3");
+      batn[i].classList.add("pogresno");
+    } else if (kliknuto == 3) {
+      console.log("Klinuto4");
+      batn[i].classList.add("pogresno");
+    }
+  });
+}
