@@ -378,6 +378,7 @@ div.arrow:hover::before {
     justify-content: center;
   }
 }
+
 @media (max-width: 533px) {
   #slider {
     width: 400px !important;
@@ -387,12 +388,12 @@ div.arrow:hover::before {
     margin-right: 100px !important;
   }
 }
+
 @media (max-width: 438px) {
   #slider {
     width: 300px !important;
   }
   #slider ul li {
     width: 300px !important;
-    margin-right: 205px !important;
   }
 }
