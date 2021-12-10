@@ -131,7 +131,9 @@ div.arrow:hover::before {
 
 /*Modal*/
 .stilModal {
-  display: block; /* Hidden by default */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
@@ -146,7 +148,6 @@ div.arrow:hover::before {
 }
 
 .stilModalContent {
-  margin: auto;
   display: block;
   width: 80%;
   max-width: 300px;
@@ -155,14 +156,13 @@ div.arrow:hover::before {
 
 .stilCaption,
 .stilNaslov {
-  margin: auto;
   display: block;
   text-align: center;
   color: white;
   padding: 10px 0;
 }
 .stilCaption {
-  width: 500px;
+  width: 400px;
   text-align: center;
 }
 
@@ -378,20 +378,21 @@ div.arrow:hover::before {
     justify-content: center;
   }
 }
-/* @media (max-width: 585px) {
+@media (max-width: 533px) {
   #slider {
     width: 400px !important;
   }
-  .about-me-single-slide {
-    width: 400px;
+  #slider ul li {
+    width: 400px !important;
+    margin-right: 100px !important;
   }
 }
-
-@media (max-width: 450px) {
+@media (max-width: 438px) {
   #slider {
     width: 300px !important;
   }
-  .about-me-single-slide {
+  #slider ul li {
     width: 300px !important;
+    margin-right: 205px !important;
   }
-} */
+}
