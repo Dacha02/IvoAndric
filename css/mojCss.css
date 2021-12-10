@@ -7,6 +7,27 @@ a {
   text-decoration: none;
   color: white;
 }
+
+/*Meni*/
+#meniUl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#meniUl li {
+  list-style-type: none;
+  margin-right: 10px;
+  font-size: 18px;
+}
+#meniUl li a {
+  color: #c18f59;
+}
+.topBanner {
+  padding: 0px;
+}
+/*Kraj menija*/
+
 #slider {
   position: relative;
   overflow: hidden;
@@ -83,9 +104,6 @@ a {
 }
 .zindex999 {
   z-index: 999;
-}
-.zindex0 {
-  z-index: 0;
 }
 div.arrow {
   width: 25px;
@@ -354,6 +372,11 @@ div.arrow:hover::before {
 }
 
 /*Responisive*/
+@media (max-width: 1250px) {
+  .site-navigation {
+    padding-bottom: 130px;
+  }
+}
 @media (max-width: 1104px) {
   .books {
     flex-direction: column;
@@ -377,6 +400,22 @@ div.arrow:hover::before {
     flex-direction: row;
     justify-content: center;
   }
+  .stilModal {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 566px) {
+  .site-container,
+  #meniUl {
+    flex-direction: column;
+    align-items: center;
+  }
+  #meniUl li,
+  .site-container img {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 533px) {
@@ -387,6 +426,9 @@ div.arrow:hover::before {
     width: 400px !important;
     margin-right: 100px !important;
   }
+  .site-navigation {
+    padding-bottom: 105px;
+  }
 }
 
 @media (max-width: 438px) {
@@ -396,5 +438,15 @@ div.arrow:hover::before {
   #slider ul li {
     width: 300px !important;
     margin-right: 0px !important;
+  }
+  .formaGreska {
+    font-size: 11px;
+    margin-left: 0px;
+  }
+  .stilModalContent {
+    max-width: 200px;
+  }
+  .stilCaption {
+    width: 300px;
   }
 }

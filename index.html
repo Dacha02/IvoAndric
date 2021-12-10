@@ -20,37 +20,36 @@
     <description></description>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav id="pocetak" class="site-navigation">
-      <div class="site-navigation-inner site-container">
-        <!-- <p style="color: white">IA</p> -->
-        <a href="index.html"><img src="./mojeSlike/logo.png" alt="" /></a>
-        <div class="main-navigation">
-          <ul class="main-navigation__ul">
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-            <li><a href="#">Page 4</a></li>
-          </ul>
-        </div>
-        <div id="myBtn" class="burger-container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        <script>
-          function myFunction(x) {
-            x.classList.toggle("change");
-          }
-        </script>
-      </div>
-    </nav>
     <!-- Navigation end -->
 
     <!-- Top banner -->
-
-    <section class="fh5co-top-banner">
+    <section class="fh5co-top-banner topBanner">
+      <!-- Navigation -->
+      <nav id="pocetak" class="site-navigation">
+        <div class="site-navigation-inner site-container">
+          <a href="index.html"><img src="./mojeSlike/logo.png" alt="" /></a>
+          <div id="meni">
+            <ul id="meniUl">
+              <li><a href="#pocetak">Početna</a></li>
+              <li><a href="#biografija">Biografija</a></li>
+              <li><a href="#dela">Dela</a></li>
+              <li><a href="#kaunterdiv">Kviz</a></li>
+              <li><a href="#citati">Citati</a></li>
+              <li><a href="#forma">Kontakt</a></li>
+            </ul>
+          </div>
+          <!-- <div id="myBtn" class="burger-container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div> -->
+          <!-- <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script> -->
+        </div>
+      </nav>
       <div class="top-banner__inner site-container">
         <div class="top-banner__image">
           <img src="./mojeSlike/ivo-andric.png" alt="author image" />
@@ -368,9 +367,9 @@
     <!-- About me end -->
 
     <!-- Books and CD -->
-    <section class="fh5co-books">
+    <section id="dela" class="fh5co-books">
       <div class="site-container">
-        <h2 class="universal-h2 universal-h2-bckg">Najpoznatija dela</h2>
+        <h2 class="universal-h2 universal-h2-bckg">Preporučena dela</h2>
         <div class="books">
           <div class="single-book">
             <img
@@ -551,7 +550,7 @@
     <!-- Blog end -->
 
     <!-- Quotes -->
-    <section class="fh5co-quotes">
+    <section id="citati" class="fh5co-quotes">
       <div class="site-container">
         <div id="sliderrrr">
           <ul>
@@ -604,7 +603,7 @@
     <!-- Quotes end -->
 
     <!-- Social -->
-    <section class="fh5co-social">
+    <section id="forma" class="fh5co-social">
       <div class="site-container">
         <div class="social">
           <h5>Zapratite me!!</h5>
@@ -694,7 +693,7 @@
               ></textarea>
               <input
                 id="dugmeForme"
-                type="reset"
+                type="button"
                 name="submit"
                 value="Pošalji"
                 class="submit-button"
