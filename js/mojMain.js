@@ -300,6 +300,14 @@ function proveraTextErije() {
   }
 }
 
+let selektForme = document.getElementById("selektujTemu");
+function proveraSelekta() {
+  selektForme.addEventListener("click", () => {
+    console.log(selektForme.options[selektForme.selectedIndex].value);
+  });
+}
+proveraSelekta();
+
 let dugmeForme = document.getElementById("dugmeForme");
 dugmeForme.addEventListener("click", () => {
   if (proveraTextErije() && proveraImena() && proveraEmail()) {

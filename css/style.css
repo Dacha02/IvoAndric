@@ -866,6 +866,7 @@
   margin: 0 auto 45px;
   color: #fff;
   line-height: 24px;
+  width: 700px;
 }
 @media (max-width: 620px) {
   .fh5co-quotes p {
