@@ -392,9 +392,9 @@ div.arrow:hover::before {
 @media (max-width: 438px) {
   #slider {
     width: 300px !important;
-    margin-right: 0px !important;
   }
   #slider ul li {
     width: 300px !important;
+    margin-right: 198px !important;
   }
 }
