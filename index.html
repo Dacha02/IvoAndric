@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mojCss.css" />
     <!--<link rel="stylesheet" href="css/slick.css" />-->
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
+    <!--Add the new slick-theme.css if you want the default styling-->
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
     <title>Ivo Andrić</title>
     <description></description>
   </head>
@@ -556,43 +559,41 @@
           <ul>
             <li>
               <div class="about-me-single-slide">
-                <div>
-                  <h2 class="universal-h2 universal-h2-bckg">
-                    What People Are Saying
-                  </h2>
-                  <p>
-                    “Pudding croissant cake candy canes fruitcake sweet roll
-                    pastry gummies sugar plum. Tart pastry danish soufflé donut
-                    bear claw chocolate cake marshmallow chupa chups. Jelly
-                    danish gummi bears cake donut powder chocolate cake. Bonbon
-                    soufflé lollipop biscuit dragée jelly-o. Wafer pastry
-                    pudding tiramisu chocolate bar croissant cake. Pie caramels
-                    gummies danish.”
-                  </p>
-                  <img src="./images/quotes.svg" alt="quotes svg" />
-                  <h4>David Dixon</h4>
-                  <p>Reader</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="about-me-single-slide">
-                <div>
-                  <h2 class="universal-h2 universal-h2-bckg">
-                    What People Are Saying
-                  </h2>
-                  <p>
-                    “Pudding croissant cake candy canes fruitcake sweet roll
-                    pastry gummies sugar plum. Tart pastry danish soufflé donut
-                    bear claw chocolate cake marshmallow chupa chups. Jelly
-                    danish gummi bears cake donut powder chocolate cake. Bonbon
-                    soufflé lollipop biscuit dragée jelly-o. Wafer pastry
-                    pudding tiramisu chocolate bar croissant cake. Pie caramels
-                    gummies danish.”
-                  </p>
-                  <img src="./images/quotes.svg" alt="quotes svg" />
-                  <h4>David Dixon</h4>
-                  <p>Reader</p>
+                <div class="your-class">
+                  <div>
+                    <h2 class="universal-h2 universal-h2-bckg">
+                      What People Are Saying
+                    </h2>
+                    <p>
+                      “Pudding croissant cake candy canes fruitcake sweet roll
+                      pastry gummies sugar plum. Tart pastry danish soufflé
+                      donut bear claw chocolate cake marshmallow chupa chups.
+                      Jelly danish gummi bears cake donut powder chocolate cake.
+                      Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer
+                      pastry pudding tiramisu chocolate bar croissant cake. Pie
+                      caramels gummies danish.”
+                    </p>
+                    <img src="./images/quotes.svg" alt="quotes svg" />
+                    <h4>David Dixon</h4>
+                    <p>Reader</p>
+                  </div>
+                  <div>
+                    <h2 class="universal-h2 universal-h2-bckg">
+                      What People Are Saying
+                    </h2>
+                    <p>
+                      “Pudding croissant cake candy canes fruitcake sweet roll
+                      pastry gummies sugar plum. Tart pastry danish soufflé
+                      donut bear claw chocolate cake marshmallow chupa chups.
+                      Jelly danish gummi bears cake donut powder chocolate cake.
+                      Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer
+                      pastry pudding tiramisu chocolate bar croissant cake. Pie
+                      caramels gummies danish.”
+                    </p>
+                    <img src="./images/quotes.svg" alt="quotes svg" />
+                    <h4>David Dixon</h4>
+                    <p>Reader</p>
+                  </div>
                 </div>
               </div>
             </li>
@@ -641,8 +642,8 @@
               >
             </div>
             <div class="footer-info__right">
-              <h5>Get In Touch</h5>
-              <p class="footer-phone">Telefon: ++3816345999</p>
+              <h5>Kontaktirajte me</h5>
+              <p class="footer-phone">Telefon: +3816345999</p>
               <p>Email : david.stevi.58.20@gmai.com</p>
               <div class="social-icons">
                 <a href="https://twitter.com/" target="_blank"
@@ -661,7 +662,7 @@
             </div>
           </div>
           <div class="footer-contact-form">
-            <h5>Contact Form</h5>
+            <h5>Kontakt forma</h5>
             <form class="contact-form">
               <div class="contact-form__input">
                 <div class="drzacElemenataForma">
@@ -687,8 +688,11 @@
                   />
                 </div>
               </div>
+              <span class="sakrij formaGreska" id="upozorenjeTextErija"
+                >Polje ne sme biti prazno!</span
+              >
               <textarea
-                placeholder="Poruka ne sme biti manja od 50 karaktera"
+                placeholder="Poruka ne sme biti manja od 25 karaktera!"
                 id="erijaTexta"
               ></textarea>
               <input
@@ -698,7 +702,13 @@
                 value="Pošalji"
                 class="submit-button"
               />
+              <br />
             </form>
+            <div class="kontejnerUspeh">
+              <span class="sakrij" id="uspehPoruka"
+                >Uspesno ste poslali poruku!</span
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -722,8 +732,18 @@
     <!-- Footer end -->
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/slick/slick.min.js"></script>
     <script src="js/mojMain.js"></script>
+
     <!--<script src="js/slick.min.js"></script>  -->
     <!--<script src="js/main.js"></script>-->
   </body>

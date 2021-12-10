@@ -280,17 +280,35 @@ function proveraEmail() {
   }
 }
 
+let erijaTextaId = document.getElementById("erijaTexta");
+erijaTextaId.addEventListener("blur", proveraTextErije);
+
+function proveraTextErije() {
+  let erijatexta = document.getElementById("erijaTexta").value;
+  let spanIznadTxtErije = document.getElementById("upozorenjeTextErija");
+
+  if (erijatexta.length == "") {
+    spanIznadTxtErije.classList.remove("sakrij");
+    return false;
+  } else if (erijatexta.length < 25) {
+    spanIznadTxtErije.classList.remove("sakrij");
+    spanIznadTxtErije.textContent = "Polje ne sme biti manje od 25 karaktera!";
+    return false;
+  } else {
+    spanIznadTxtErije.classList.add("sakrij");
+    return true;
+  }
+}
+
 let dugmeForme = document.getElementById("dugmeForme");
 dugmeForme.addEventListener("click", () => {
-  let erijatexta = document.getElementById("erijaTexta").value;
-  let erijaTextaStilizovanje = document.getElementById("erijaTexta");
-  if (erijatexta.length > 10 && proveraImena() && proveraEmail()) {
-    console.log("sve je okej");
-    erijaTextaStilizovanje.classList.remove("class", "textErijaStilizovanje");
+  if (proveraTextErije() && proveraImena() && proveraEmail()) {
+    document.getElementById("uspehPoruka").classList.remove("sakrij");
   } else {
     proveraImena();
     proveraEmail();
-    erijaTextaStilizovanje.classList.add("class", "textErijaStilizovanje");
+    proveraTextErije();
+    document.getElementById("uspehPoruka").classList.add("sakrij");
   }
 });
 
@@ -307,6 +325,9 @@ for (let i = 0; i < batn.length; i++) {
     } else if (kliknuto == 1) {
       console.log("Klinuto2");
       batn[i].classList.add("ispravno");
+      batn[0].setAttribute("disabled", "true");
+      batn[2].setAttribute("disabled", "true");
+      batn[3].setAttribute("disabled", "true");
     } else if (kliknuto == 2) {
       console.log("Klinuto3");
       batn[i].classList.add("pogresno");
@@ -316,3 +337,12 @@ for (let i = 0; i < batn.length; i++) {
     }
   });
 }
+
+//Plugin za slajder
+$(document).ready(function () {
+  $(".your-class").slick({
+    autoplaySpeed: 3000,
+    autoplay: true,
+    arrows: false,
+  });
+});

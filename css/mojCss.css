@@ -292,8 +292,18 @@ div.arrow:hover::before {
   padding-left: 30px;
 }
 
-.textErijaStilizovanje {
+.greskaSeDesila {
   border: 1px solid red !important;
+}
+
+.kontejnerUspeh {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#uspehPoruka {
+  color: white;
+  font-weight: 600;
 }
 
 /*Kviz*/
