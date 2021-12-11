@@ -301,21 +301,33 @@ function proveraTextErije() {
 }
 
 let selektForme = document.getElementById("selektujTemu");
+selektForme.addEventListener("blur", proveraSelekta);
 function proveraSelekta() {
-  selektForme.addEventListener("click", () => {
-    console.log(selektForme.options[selektForme.selectedIndex].value);
-  });
+  let value = selektForme.options[selektForme.selectedIndex].value;
+  if (value == "") {
+    document.getElementById("spanZaDDL").classList.remove("sakrij");
+    return false;
+  } else {
+    console.log(value);
+    document.getElementById("spanZaDDL").classList.add("sakrij");
+    return true;
+  }
 }
-proveraSelekta();
 
 let dugmeForme = document.getElementById("dugmeForme");
 dugmeForme.addEventListener("click", () => {
-  if (proveraTextErije() && proveraImena() && proveraEmail()) {
+  if (
+    proveraTextErije() &&
+    proveraImena() &&
+    proveraEmail() &&
+    proveraSelekta()
+  ) {
     document.getElementById("uspehPoruka").classList.remove("sakrij");
   } else {
     proveraImena();
     proveraEmail();
     proveraTextErije();
+    proveraSelekta();
     document.getElementById("uspehPoruka").classList.add("sakrij");
   }
 });
