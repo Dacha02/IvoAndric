@@ -354,6 +354,12 @@ div.arrow:hover::before {
   border: 2px solid #4bb543;
   animation: zoom-in-zoom-out 1s ease;
 }
+.fontAwsAtag {
+  padding: 10px 17px !important;
+}
+.formaFontAwsAtag {
+  padding: 14px 21px !important;
+}
 
 @keyframes zoom-in-zoom-out {
   0% {

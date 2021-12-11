@@ -243,7 +243,7 @@ function proveraImena() {
   if (!uzorakIme.test(ime)) {
     let poljeIme = document.getElementById("upozorenjeIme");
     if (ime == "" || !ime.trim()) {
-      poljeIme.innerHTML = "Niste popunili Ime i prezime!";
+      poljeIme.innerHTML = "Niste popunili ime i prezime!";
     } else {
       poljeIme.innerHTML = "Pogšan unos imena i prezimena!";
     }
@@ -292,7 +292,8 @@ function proveraTextErije() {
     return false;
   } else if (erijatexta.length < 25) {
     spanIznadTxtErije.classList.remove("sakrij");
-    spanIznadTxtErije.textContent = "Polje ne sme biti manje od 25 karaktera!";
+    spanIznadTxtErije.textContent =
+      "Ne mozete poslati poruku kraću od 25 karaktera";
     return false;
   } else {
     spanIznadTxtErije.classList.add("sakrij");
