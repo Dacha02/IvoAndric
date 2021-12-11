@@ -9,18 +9,18 @@ a {
 }
 
 /*Meni*/
-#meniUl {
+.meniUl {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-#meniUl li {
+.meniUl li {
   list-style-type: none;
   margin-right: 10px;
   font-size: 18px;
 }
-#meniUl li a {
+.meniUl li a {
   color: #c18f59;
 }
 .topBanner {
@@ -417,11 +417,11 @@ div.arrow:hover::before {
 
 @media (max-width: 566px) {
   .site-container,
-  #meniUl {
+  .meniUl {
     flex-direction: column;
     align-items: center;
   }
-  #meniUl li,
+  .meniUl li,
   .site-container img {
     margin-right: 0px;
     margin-bottom: 10px;
