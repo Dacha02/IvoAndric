@@ -56,6 +56,13 @@ let pokrenuo = false;
 
 window.addEventListener("scroll", () => {
   let skrol = window.scrollY;
+  if (skrol > 300) {
+    let vratiGore = document.getElementById("vratiGore");
+    vratiGore.classList.remove("sakrijBackToTop");
+  } else {
+    let vratiGore = document.getElementById("vratiGore");
+    vratiGore.classList.add("sakrijBackToTop");
+  }
   let divKaunter = document.getElementById("kaunterdiv");
   let pozicija = divKaunter.getBoundingClientRect();
   let y = pozicija.top;

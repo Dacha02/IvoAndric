@@ -291,6 +291,9 @@ div.arrow:hover::before {
   visibility: hidden;
   padding-left: 30px;
 }
+.sakrijBackToTop {
+  display: none;
+}
 
 .greskaSeDesila {
   border: 1px solid red !important;
