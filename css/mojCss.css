@@ -317,17 +317,25 @@ div.arrow:hover::before {
 }
 
 .fieldsetDDL {
-  display: flex;
   border: 0px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  color: white;
+  margin-bottom: 20px;
 }
 #selektujTemu {
   padding: 20px;
   border: 1px solid #404040;
   background-color: #282828;
   color: #aaa;
+}
+#spanRadioBtn {
+  margin: 10px 0px;
+}
+
+input[type="radio"]:first-child {
+  margin-top: 10px;
 }
 
 /*Kviz*/

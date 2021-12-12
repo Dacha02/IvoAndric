@@ -378,9 +378,20 @@ function proveraSelekta() {
     document.getElementById("spanZaDDL").classList.remove("sakrij");
     return false;
   } else {
-    console.log(value);
     document.getElementById("spanZaDDL").classList.add("sakrij");
     return true;
+  }
+}
+
+function proveraRadioButton() {
+  if ($("input[name=drone]:checked").length > 0) {
+    console.log("Cekirano");
+    document.getElementById("upozorenjeRadioBatn").classList.add("sakrij");
+    return true;
+  } else {
+    console.log("Nije cekirano");
+    document.getElementById("upozorenjeRadioBatn").classList.remove("sakrij");
+    return false;
   }
 }
 
@@ -390,7 +401,8 @@ dugmeForme.addEventListener("click", () => {
     proveraTextErije() &&
     proveraImena() &&
     proveraEmail() &&
-    proveraSelekta()
+    proveraSelekta() &&
+    proveraRadioButton()
   ) {
     document.getElementById("uspehPoruka").classList.remove("sakrij");
   } else {
@@ -398,6 +410,7 @@ dugmeForme.addEventListener("click", () => {
     proveraEmail();
     proveraTextErije();
     proveraSelekta();
+    proveraRadioButton();
     document.getElementById("uspehPoruka").classList.add("sakrij");
   }
 });
