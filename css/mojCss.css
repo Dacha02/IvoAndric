@@ -477,7 +477,7 @@ div.arrow:hover::before {
   }
   #slider ul li {
     width: 300px !important;
-    margin-right: 0px !important;
+    margin-right: 200px !important;
   }
 
   .stilModalContent {
